@@ -1,0 +1,199 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* basic stylings */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 8rem;
+    text-align: center;
+}
+
+h2,
+label,
+button {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    width: 25%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+li {
+    padding: 2%;
+}
+
+header,
+footer {
+    background-color: lemonchiffon;
+}
+
+/* header stylings */
+
+.header-nav {
+    margin-bottom: 5%;
+    font-size: 3rem;
+}
+
+li a {
+    padding-top: 10px;
+}
+
+li:hover,
+li:focus {
+    text-decoration: underline;
+}
+
+.header-nav,
+.footer {
+    display: flex;
+    padding: 2% 0;
+    width: 100%;
+    align-items: center;
+}
+
+.main-menu li {
+    position: relative;
+}
+
+ul .sub-menu {
+    overflow: hidden;
+    height: 0;
+    position: absolute;
+    /* every other diff background? */
+}
+
+.main-menu li:hover .sub-menu,
+.main-menu li:focus-within .sub-menu {
+    height: auto;
+    border: 2px ridge lemonchiffon ;
+} 
+
+ul .sub-menu li {
+    background-color: white;
+    font-size: 16px;
+
+}
+.logo {
+    height: auto;
+    width: 100%;
+}
+
+button.joinUsButton {
+    height: 100%;
+    width: 100%;
+    font-size: 1.25em;
+    padding: 7px;
+    margin: 0;
+}
+
+/* main stylings */
+
+.welcome {
+    line-height: 2;
+}
+
+.content {
+    margin: 10% 0;
+    padding: 5% 2%;
+    line-height: 2;
+    border: lemonchiffon 10px ridge;
+}
+
+/* footer stylings */
+
+.footer {
+    justify-content: space-between;
+}
+
+.juno-link {
+    padding-top: 1.5%;
+}
+
+/* modal stylings */
+.xOut {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 1.5em;
+}
+
+.subscribe {
+    position: fixed;
+    top: 0%;
+    left: 20%;
+    height: 100vh;
+    width: 60%;
+    text-align: center;
+    border: 3px ridge #7db9b3;
+    background-color: lemonchiffon;
+}
+
+#modalTitle {
+    padding-top: 2%;
+}
+
+.subscribeModal {
+        padding: 1%;
+        text-align: center;
+      }
+     
+      label {
+        font-weight: bold;
+      }
+      
+      input {
+        border: 3px ridge #7db9b3;
+        width: 90%;
+        line-height: 2;
+      }
+      
+      .formInputs {
+        margin-bottom: 2%;
+      }
+      
+      button {
+        background: #7db9b3;
+        color: black;
+        padding: 2%;
+        margin: 2%; 
+        border: 2px ridge #7db9b3;
+        height: 5%;
+        width: 50%;
+      }
+
+      button:hover,
+      button:focus {
+          background-color: white;
+      }

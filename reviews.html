@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assests/favicon.png"/>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Parisienne&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Reviews | Book Butterflies</title>
+</head>
+<body>
+    <!-- begin header -->
+    <header>
+        <div class="wrapper">
+            <nav class="header-nav">
+                <a href="./index.html"> <img src="./assests/logo.png" alt="Book Butterflies logo" class="logo"> </a>
+                <ul>
+                    <!-- header nav -->
+                    <li> <a href="./reviews.html">Reviews</a> </li>
+                    <li class="drop-down"> <a href="./recommendations.html" >Recommendations</a> <ul class="drop-down-menu">
+                        <li> <a href="./recommendations.html#levels"> Age/Reading Level</a> </li>
+                        <li> <a href="./recommendations.html#genres">Genre</a> </li>
+                        <li> <a href="./recommendations.html#combos">Book/Movie Combos</a> </li>
+                        <li> <a href="./recommendations.html#book-club">Book Club Ideas</a> </li>
+                    </ul></li>
+                    <li class="drop-down"> <a href="./about-me.html">About Me</a> <ul class="drop-down-menu">
+                        <li> <a href="./about-me.html#all-time">My All-Time Top 5</a> </li>
+                        <li> <a href="./about-me.html#obsessions">My Current Obsessions</a> </li>
+                        <li> <a href="./about-me.html#nightstand">On My Nightstand</a> </li>
+                        <li> <a href="./about-me.html#about-me">About Me</a> </li>
+                        
+                    </ul></li>
+                    <li> <button type="button"class="joinUsButton">Join Us!</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Reviews</h1>
+        <h2>Coming Soon!</h2>
+    </main>
+    <section class="subscribe" style="display: none;">
+        <span class="xOut">x</span>
+        <h1 id="modalTitle">Become a Book Butterfly!</h1>
+        <form action="#"method="POST" class="subscribeModal" name="subscribeModal">
+            <div class="formInputs">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="formInputs">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="formInputs">
+                <label for="userEmail">Your Email</label>
+                <input type="email" id="userEmail" name="userEmail" required>
+            </div>
+            <button type="submit" class="submit">Add me</button>
+            <button type="button" class="closeWindow">Not now</button> 
+        </form>
+<script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+<script src="./script.js"></script>
+</body>
+</html>
